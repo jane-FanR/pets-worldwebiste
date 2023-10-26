@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adopt A Pet</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Playpen+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body class="adoptpet_body">
+
+    <div class="banner">
+        <a href="../index.html"><img src="../images/logo.png" alt="weblogo"></a>
+        <h1>Pets' world</h1>
+        <p>Adopt a friendly companion</p>
+    </div>
+
+    <div class="main_content">
+
+        <nav class="navi_bar">
+            <ul>
+                <li><a href="../index.html">Homepage</a></li>
+                <li><a href="availablepets.html">Available pets</a></li>
+                <li><a href="adoptpet.html">Adopt a pet</a></li>
+            </ul>
+        </nav>
+
+        <!-- fill the form to adopt a pet -->
+        <form class="adopt_form">
+            <h2>Pet adoption form</h2>
+
+            <label class="form_label" for="name">Your name*</label><br>
+            <input type="text" name="name" minlength="3" maxlength="20" required><br>
+
+            <label class="form_label" for="pnumber">Your phone number*</label><br>
+            <input type="tel" name="pnumber" minlength="10" maxlength="10" required><br>
+
+            <label class="form_label" for="email">Your email*</label><br>
+            <input type="email" name="email" required><br>
+
+            <label class="form_label" for="contact_option">How would you like us to contact you?</label><br>
+            <input type="radio" name="contact_option"><label for="contact_option">Phone</label>
+            <input type="radio" name="contact_option"><label for="contact_option">Email</label><br>
+
+            <label class="form_label" for="selectpets">Your desired pet</label><br/>
+            <select name="selectpets">
+                    <option value="tigrd">Tigr</option>
+                    <option value="fluffy">Fluffy</option>
+                    <option value="micky">Micky</option>
+                    <option value="ringo">Ringo</option>
+            </select><br>
+
+            <label class="form_label" for="comments">Do you want to leave us any additional comments?</label><br/>
+            <textarea name="comments" cols="30" rows="10"></textarea><br>
+
+            <input type="checkbox" name="TC">
+            <label for="TC"> I agree your T&C</label><br>
+            <input type="checkbox" name="subscribe">
+            <label for="subscribe"> I want to subscribe to your monthly newsletter</label><br>
+
+            <input type="image" src="../images/paw.png" alt="submit" id="submit_img">
+        </form>
+        
+    </div>
+    
+    <footer>
+        <p>All rights seserved. &copy; XMLVC</p>
+    </footer>
+</body>
+</html>
